@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Listing Interface</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="filter-box">
+        <select id="filterPrice">
+          <option value="all">All Prices</option>
+          <option value="low">Below $50</option>
+          <option value="mid">$50 - $200</option>
+          <option value="high">Above $200</option>
+        </select>
+
+        <select id="filterOwner">
+          <option value="all">All Owners</option>
+          <option value="Alice">Alice</option>
+          <option value="Bob">Bob</option>
+          <option value="Carol">Carol</option>
+        </select>
+      </div>
+
+      <div class="product-box" id="productBox">
+        <h2 id="title"></h2>
+        <p id="owner"></p>
+        <p id="price"></p>
+      </div>
+
+      <div class="controls">
+        <button id="prevBtn">Previous</button>
+        <button id="nextBtn">Next</button>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
